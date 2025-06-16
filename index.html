@@ -1,0 +1,479 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Genotropin VIRTUAL NURSE</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- PWA -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/pwa_logo_32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="./assets/icons/pwa_logo_48x48.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/icons/pwa_logo_96x96.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="./assets/icons/pwa_logo_128x128.png">
+    <link rel="icon" type="image/png" sizes="144x144" href="./assets/icons/pwa_logo_144x144.png">
+    <link rel="icon" type="image/png" sizes="152x152" href="./assets/icons/pwa_logo_152x152.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/icons/pwa_logo_192x192.png">
+    <link rel="apple-touch-icon" href="./assets/icons/pwa_logo_32x32.png">
+
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/icons/pwa_logo_152x152.png">
+    <link rel="apple-touch-icon" sizes="96x96" href="./assets/icons/pwa_logo_96x96.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/icons/pwa_logo_144x144.png">
+    <link rel="apple-touch-icon" sizes="32x32" href="./assets/icons/pwa_logo_32x32.png">
+    <meta name="msapplication-TileImage" sizes="144x144" href="./assets/icons/pwa_logo_144x144.png">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+	  <!-- End of PWA -->
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/pwa.css" />
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <link rel="stylesheet" href="./assets/css/jquery.steps.css" />
+
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+  </head>
+
+<!--<body id="app" onload="verify('EM659iqRyWvLcr02V','QR_MR1_GENO_Vnurseglobal','con_main')">-->
+    <!--[if lt IE 7]>
+      <p class="chromeframe">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a> or
+        <a href="http://www.google.com/chromeframe/?redirect=true"
+          >activate Google Chrome Frame</a
+        >
+        to improve your experience.
+      </p>
+    <![endif]-->
+    <div class="global-wrapper">
+      <div
+        class="flex-col text-[#fff] flex absolute inset-0 bg-[#fff] z-20 bg-[url('./assets/icons/loading-bg.svg')] bg-cover justify-center items-center"
+        id="loadingWindow"
+      >
+        <div class="flex-1 flex flex-col justify-center items-center">
+          <img class="w-[8rem]" src="./assets/icons/logo-w.svg" />
+          <p class="font-black text-6xl bold-family my-12">Virtual Nurse</p>
+          <section class="mt-4 font-thin text-4xl">
+            <p class="mb-4">Growth hormone</p>
+            <p>Daily treatment</p>
+          </section>
+          <section class="mt-20">
+            <div class="loading-bar">
+              <section></section>
+            </div>
+            <p class="text-center text-2xl font-semibold mt-4">
+              Virtual Nurse is loading...
+            </p>
+          </section>
+          <section class="mt-40">
+            <img class="w-[12rem]" src="./assets/icons/logo2-w.svg" />
+          </section>
+
+          <div style="display: flex; flex-direction: column; align-items: center; padding-top: 15vh;">
+    
+            <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; width: 90%; max-width: 800px;">
+                <!-- Vertical Text on the Left -->
+                <p style="writing-mode: vertical-rl; transform: rotate(180deg); font-size: 10px; font-family: Arial, sans-serif; font-weight: lighter; margin-right: 20px;">PP-GEN-IND-1075</p>
+        
+                <!-- Main Content on the Right -->
+                <div style="text-align: center; max-width: 600px;">
+                    <p style="font-size: 8px; font-family: Arial, sans-serif; font-weight: lighter;">
+                        Address - Pfizer Products India Private Limited, The Capital, ‘G’ Block, BKC, 
+                        Bandra (East), Mumbai – 400051, India
+                    </p>
+                    <br>
+                    <p style="font-size: 8px; font-family: Arial, sans-serif; font-weight: lighter;">
+                        Trademark & Licensed user - Genotropin &reg; Trademark Proprietor: Pfizer Health AB 
+                    </p>
+                    <br>
+                    <p style="font-size: 8px; font-family: Arial, sans-serif; font-weight: lighter;">
+                        Licensed User: Pfizer Products India Private Limited, India
+                    </p>
+                </div>
+            </div>
+        
+        </div>
+          
+
+        </div>
+      </div>
+      <div id="allPages" class="slides-wrapper pt-5 hidden">
+        <div id="outerStepper">
+          <h2></h2>
+          <section>
+            <div class="stepper-container">
+              <div id="wizard">
+                <h2></h2>
+                <section class="step flex items-center justify-center flex-col">
+                  <div  class="flex w-[100%] items-center justify-center flex-col !h-[100vh] ios-prompt-install ios">
+                      <div class="ios-prompt-container">
+                          <header>
+                              <p class="text-6xl" word="Save the app"></p>
+                              <p class="text-3xl" word="to your home screen"></p>
+                          </header>
+                          <section class="selection dim flex items-center" role="next">
+                              <img class="mr-4 w-[4.8rem]" src="./assets/icons/upload-icon.png" alt="">
+                              <p class="text-xl">Tap the share button at the bottom of the screen</p>
+                          </section>
+                          <section class="selection dim flex items-center" role="next">
+                              <img class="mr-4 w-[4.8rem]" src="./assets/icons/plus-icon.svg" alt="">
+                              <p class="text-xl">Tap on the "Add to home screen" option</p>
+                          </section>
+                          <section class="selection dim flex items-center" role="next">
+                              <img class="mr-4 w-[4.8rem]" src="./assets/icons/add-icon.svg" alt="">
+                              <p class="text-xl"> Tap the 'Add' button at the top of the screen</p>
+                          </section>
+                          <section class="mt-20">
+                              <p class="text-end cursor-pointer text-[1.6rem] font-semibold bold-family text-[#555581]"
+                                  role="outer-next">Skip >
+                              </p>
+                          </section>
+                      </div>
+                  </div>
+
+
+                  <div class="ios-mobile-pwa-enabled" style="display: none;">
+                      <header>
+                          <p class="text-6xl" word="Save the app"></p>
+                          <p class="text-3xl" word="to your home screen"></p>
+                      </header>
+                      <div class="flex w-[100%] items-end justify-center flex-col" style="margin-top: 30px !important;">
+                          <section class="selection dim flex items-center" role="next">
+                              <img class="mr-4 w-[4.8rem]" src="./assets/icons/upload-icon.png" alt="">
+                              <p class="text-xl">Tap the share button at the bottom of the screen</p>
+                          </section>
+                          <section class="selection dim flex items-center" role="next">
+                              <img class="mr-4 w-[4.8rem]" src="./assets/icons/plus-icon.svg" alt="">
+                              <p class="text-xl">Tap on the "Add to home screen" option</p>
+                          </section>
+                          <section class="selection dim flex items-center" role="next">
+                              <img class="mr-4 w-[4.8rem]" src="./assets/icons/add-icon.svg" alt="">
+                              <p class="text-xl"> Tap the 'Add' button at the top of the screen</p>
+                          </section>
+                          <section class="mt-20">
+                              <p id="skip-btn" class="text-end cursor-pointer text-[1.6rem] font-semibold bold-family text-[#555581]"
+                                  role="outer-next">Skip >
+                              </p>
+                          </section>
+                      </div>
+                      
+                  </div>
+
+                  <div class="ios-mobile-pwa-enabled w-[100%] items-center justify-center flex-col !h-[100vh]" style="display: none;">
+                      <div class="ios-prompt-container">
+                          <header>
+                              <p class="text-6xl" word="Save the app"></p>
+                              <p class="text-3xl" word="to your home screen"></p>
+                          </header>
+                          <section class="selection dim flex items-center" role="next">
+                              <img class="mr-4 w-[4.8rem]" src="./assets/icons/upload-icon.png" alt="">
+                              <p class="text-xl">Tap the share button at the bottom of the screen</p>
+                          </section>
+                          <section class="selection dim flex items-center" role="next">
+                              <img class="mr-4 w-[4.8rem]" src="./assets/icons/plus-icon.svg" alt="">
+                              <p class="text-xl">Tap on the "Add to home screen" option</p>
+                          </section>
+                          <section class="selection dim flex items-center" role="next">
+                              <img class="mr-4 w-[4.8rem]" src="./assets/icons/add-icon.svg" alt="">
+                              <p class="text-xl"> Tap the 'Add' button at the top of the screen</p>
+                          </section>
+                          <section class="mt-20">
+                              <p class="text-end cursor-pointer text-[1.6rem] font-semibold bold-family text-[#555581]"
+                                  role="outer-next">Skip >
+                              </p>
+                          </section>
+                      </div>
+                  </div>
+
+                  <div class="ad2hs-prompt-container w-[100%] !h-[90vh] andriod">
+                      <div class="action">
+                          <a href="#" id="ad2hs-prompt-close-2" role="outer-next">Skip</a>
+                          <p>Virtual Nurse</p>
+                          <a href="#" class="ad2hs-prompt" role="outer-next">Add</a>
+                      </div>
+                      <div style="display: flex;justify-content:center;display: flex;height: calc(100vh - 200px);align-content: center;flex-direction: column;">
+                          <div class="site-logo">
+                              <img src="./assets/icons/logo.svg" alt="Virtual Nurse" class="img-responsive">
+                          <div class="message">
+                              <!-- <span class="website-name">Instructions For Use</span> -->
+                              <span class="website-domain">Add Virtual Nurse to your home<br/> screen for easy access</span>
+                          </div>
+                          </div>
+                      </div>
+                      <!-- </div> -->
+                  </div>
+              </section>
+                <!-- END STEP 3 -->
+              </div>
+            </div>
+          </section>
+          <h2></h2>
+          <section>
+            <div class="stepper-container">
+              <header
+                class="pagination-header"
+                id="paginationHeader"
+                class="font-semibold"
+              >
+                <div>
+                  <p class="text-[1.6rem]">
+                    Step <span id="currentStepNumber"></span>/
+                    <span id="lastStep"></span>
+                  </p>
+                  <p
+                    class="text-lg bold-family font-semibold"
+                    id="currentStepLabel"
+                  ></p>
+                </div>
+                <div id="nav2">
+                  <p class="text-[1.6rem]">
+                    Step <span id="nextStepNumber"></span>/
+                    <span id="lasstStep"></span>
+                  </p>
+                  <p class="text-lg bold-family" id="nextStepLabel"></p>
+                </div>
+              </header>
+              <div id="introStepper">
+                <!-- STEP 0 -->
+                <h2></h2>
+                <section></section>
+
+                <h2></h2>
+                <section class="step" style="padding-bottom: 0rem">
+                  <header>
+                    <p class="text-6xl" word="Select the device"></p>
+                    <p class="text-3xl" word="by type"></p>
+                  </header>
+                  <div
+                    style="height: 400px; overflow-y: auto"
+                    id="dosesContainer"
+                  ></div>
+                </section>
+                <h2></h2>
+                <section class="step" style="padding-bottom: 7rem">
+                  <header>
+                    <p class="text-6xl" word="Select"></p>
+                    <p class="text-3xl" word="Your type of experience"></p>
+                  </header>
+                  <section
+                    onclick="setExperienceType('usingNewGoQuick')"
+                    class="selection items-center"
+                    role="intro-next"
+                    id="test"
+                  >
+                    <div class="flex">
+                      <!-- <img class="mr-4" src="./icons/pen-icon.svg" alt="" /> -->
+                      <p class="text-xl bold-family">
+                        Setting up and using a new GoQuick Pen
+                      </p>
+                    </div>
+                    <span
+                      style="font-size: 11px; color: #555581"
+                      class="text-sm bold-family"
+                      >This is the first time I use a new GoQuick Pen
+                    </span>
+                  </section>
+
+                  <section
+                    onclick="setExperienceType('RoutineUseGoQuick')"
+                    class="selection items-center"
+                    role="intro-next"
+                  >
+                    <div class="flex">
+                      <!-- <img class="mr-4" src="./assets/icons/pen-icon.svg" alt="" /> -->
+                      <p class="text-xl bold-family">Routine use of GoQuick</p>
+                    </div>
+                    <span style="font-size: 11px; color: #555581"
+                      >After setting up and first use of GoQuick.</span
+                    >
+                  </section>
+                </section>
+                <!-- END STEP 1 -->
+
+                <!-- STEP 3 -->
+                <h2></h2>
+                <section
+                  class="step"
+                  role="intro-next"
+                  data-role="touch"
+                  data-on-swipe-right="goBack"
+                  data-on-swipe-left="goNext"
+                >
+                  <header>
+                    <p class="text-6xl" word="Follow the guide"></p>
+                    <p class="text-3xl" word="to inject correctly"></p>
+                  </header>
+                  <img
+                    class="w-[86.1%]"
+                    src="./assets/icons/follow-the-guide.png"
+                    alt=""
+                    role="intro-next"
+                  />
+                  <div class="mt-8">
+                    <p
+                      class="text-[1.6rem] font-semibold"
+                      word="Hello, I'm your guide,Virna Let the Virtual Nurse guide you through the exact steps to inject your medication safely.
+"
+                    ></p>
+                  </div>
+                </section>
+                <!-- END STEP 2 -->
+
+                <!-- STEP  3-->
+                <h2></h2>
+                <section
+                  class="step"
+                  data-role="touch"
+                  data-on-swipe-right="goBack"
+                  data-on-swipe-left="goNext"
+                >
+                  <header>
+                    <p class="text-5xl" word="View injection site"></p>
+                    <p class="text-3xl" word="& learn about all areas"></p>
+                  </header>
+                  <img
+                    class="w-[86.1%]"
+                    src="./assets/icons/step5.png"
+                    alt=""
+                    role="intro-next"
+                  />
+                  <div>
+                    <p
+                      class="text-[1.6rem] font-semibold"
+                      word="Choose your injection site every day and learn about different areas to avoid injection in the same spot in every day."
+                    ></p>
+                  </div>
+                </section>
+                <!-- END STEP 3 -->
+
+                <h2></h2>
+                <section
+                  class="step"
+                  data-role="touch"
+                  data-on-swipe-right="goBack"
+                  data-on-swipe-left="goNext"
+                >
+                  <header>
+                    <p class="text-6xl" word="Use the device"></p>
+                    <p class="text-3xl" word="correctly"></p>
+                  </header>
+                  <img
+                    class="w-[86.1%]"
+                    src="./assets/icons/step7.png"
+                    alt=""
+                    role="intro-next"
+                  />
+                  <div>
+                    <p
+                      class="text-[1.6rem] font-semibold"
+                      word="Read our detailed device guideline to learn more about the device and how to use it correcly."
+                    ></p>
+                  </div>
+                </section>
+                <!-- END STEP 5 -->
+
+                <!-- STEP  6-->
+                <h2></h2>
+                <section
+                  class="step"
+                  data-role="touch"
+                  data-on-swipe-right="goBack"
+                >
+                  <header>
+                    <p class="text-6xl" word="Find notes & tips"></p>
+                    <p class="text-3xl" word="about each injection step"></p>
+                  </header>
+                  <img class="w-[86.1%]" src="./assets/icons/step8.png" alt="" />
+                  <div>
+                    <p
+                      class="text-[1.8rem] font-semibold"
+                      word="You can find tips & notes in the injection guide section by clicking on the info icon in the top right corner."
+                    ></p>
+                  </div>
+                </section>
+                <!-- END STEP 6 -->
+              </div>
+              <footer id="Footer">
+                <div class="mt-4">
+                  <section class="flex justify-center gap-2">
+                    <div style="display: none" class="bullet selected"></div>
+                    <div class="bullet selected"></div>
+                    <div class="bullet"></div>
+                    <div class="bullet"></div>
+                    <div class="bullet"></div>
+                    <!-- <div class="bullet"></div> -->
+                  </section>
+                </div>
+                <section class="mt-12">
+                  <p
+                    class="cursor-pointer text-[1.6rem] inline font-semibold bold-family fixed bottom-10 right-10 h-16 w-30"
+                    id="skipIntroBtn"
+                  >
+                    Skip intro
+                    <span><img src="./assets/icons/Arrow.svg" alt="" /></span>
+                  </p>
+                </section>
+              </footer>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/jquery-1.9.1.min.js"></script>
+    <script src="./assets/js/jquery.cookie-1.3.1.js"></script>
+    <script src="./assets/js/lang.js"></script>
+    <script src="./assets/js/urlbuilder.js"></script>
+    <script  src="./assets/js/auth.js"></script>
+    <script src="./assets/js/jquery.steps.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/tailwind.js"></script>
+    <script src="./assets/js/modernizr-2.6.2.min.js"></script>
+    <script src="./assets/js/metro.min.js"></script>
+	    <script  src="./pwa.js"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+     <script>
+      jQuery('head').append('<link rel="manifest" href="' + window.location.origin + '/manifest.json" crossorigin="use-credentials">');
+      if ('serviceWorker' in navigator) {
+          navigator.serviceWorker
+              .register('./service-worker.js')
+              .then(function () {
+                  console.log("Service Worker Registered");
+              });
+      }
+      </script>
+      <script>
+          jQuery(document).ready(function () {
+              let urlRedirect = getCookie("url");
+              if (urlRedirect) {
+                  console.log(urlRedirect);
+                  location.href = location.origin + "/app/index.html";
+              }
+
+              if ($('#skipIntroBtn').text() === 'Finish >') {
+                  console.log("yes");
+              }
+          })
+      </script>
+  </body>
+</html>
