@@ -1,0 +1,4 @@
+Sitemap: https://www.virtualnurse-genotropin.in/sitemap.xml
+
+User-agent: *
+allow: /

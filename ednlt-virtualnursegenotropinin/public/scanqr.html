@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type=text/javascript src="./assets/js/jquery-3.6.0.min.js"></script>
+
+  <title>Virtual Nurse QR</title>
+  <link rel="stylesheet" href="./assets/css/pwa.css">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    canvas {
+      width: 100%;
+      height: 100%;
+    }
+
+    #gameContainer {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+
+    #fullScreenToggle {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+  </style>
+  <!-- Adobe Analytics code-->
+  <script src=https://assets.adobedtm.com/22baa8e94be8/000d9abd1c56/launch-05ff44f91238.min.js async></script>
+  <!-- End Adobe Analytics code -->
+</head>
+
+
+<body onload="scan()">
+    <img src="assets/icons/qr_instruction_port.png" style="width:100%;height:100%;position:absolute;top:0;left:0;z-index:-5000;" id="qr_port_img" alt="">
+     <img src="assets/icons/qr_instruction_land.png" style="width:100%;height:100%;position:absolute;top:0;left:0;z-index:-5000;" id="qr_land_img" alt="">
+    <script>
+        function scan(){
+         if(window.innerHeight > window.innerWidth)
+              {
+                 document.getElementById("qr_port_img").style.display="block";
+                 document.getElementById('qr_land_img').style.display="none";
+              }
+         else
+              {
+                document.getElementById("qr_land_img").style.display="block";
+                document.getElementById('qr_port_img').style.display="none";
+              }
+                return 
+        }
+    </script>
+</body>
+
+</html>
