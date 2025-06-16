@@ -1,0 +1,145 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    background: rgb(0, 125, 195);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box .img-logo {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.box .img-logo img {
+    width: 250px;
+}
+
+.box .confirm-box {
+    width: 510px;
+    height: auto;
+    background-color: white;
+    padding: 25px 20px;
+    border-radius: 5px;
+    /* box-shadow: 0 0 6px 1px #fff; */
+}
+
+.box .confirm-box .content {
+    display: flex;
+}
+
+.box .confirm-box p {
+    margin: 0;
+    padding: 0 10px;
+}
+
+.box .confirm-box .form-group {
+    /* margin: 10px; */
+    display: inline-block;
+}
+
+.form-group {
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  .form-group input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .form-group label {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .form-group label:before {
+    content:'';
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 2px solid #0079bf;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 8px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+
+  .form-group input:checked + label::before {
+    background-color: #0079bf;
+  }
+  
+  .form-group input:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 8px;
+    width: 3px;
+    height: 15px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+.box .confirm-box .confirm-buttons {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+button {
+    background: #b8b8b8;
+    color: white;
+    padding: 10px 0px;
+    cursor: pointer;
+    border-radius: 0px;
+    font-weight: bold;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 180px;
+    text-align: center;
+    font-size: 18px;
+    border: none;
+}
+
+button#accept {
+    background-color: rgb(0, 125, 195);
+    color: #fff;
+}
+
+button#accept:disabled {
+    background-color: #007dc26e;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+@media screen and (max-width:480px) {
+    .box .confirm-box {
+        width: 300px;
+    }
+
+    .box .confirm-box .confirm-buttons {
+        flex-direction: column;
+    }
+
+    button {
+        margin-top: 10px;
+    }
+}
